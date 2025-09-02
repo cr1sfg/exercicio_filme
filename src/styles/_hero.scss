@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(../images/american_pie.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        /* Parallax effect */
+        background-attachment: fixed;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 16px rgba(0,0,0, 0.5);
+        background-color: rgba(0,0,0, 0.4);
+        color: #222;
+        text-align: center;
+    }
+}
