@@ -6,7 +6,6 @@
 
     h3 {
         text-align: center;
-        padding-bottom: 12px;
     }
 
     &__lists {
@@ -16,7 +15,7 @@
         gap: 24px;
 
         @media (max-width: 768px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
 
         &--is-active {
@@ -43,6 +42,7 @@
     &__tabs {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
 
         &__button {
             color: variaveis.$corTextoSecundario;
@@ -56,7 +56,7 @@
             border-bottom: 5px solid transparent;
 
             &--is-active {
-                border-color: variaveis.$corTextoSecundario;
+                font-size: 30px;
             }
 
             @media (max-width: 768px) {

@@ -35,5 +35,23 @@
         background-color: rgba(0,0,0, 0.4);
         color: #222;
         text-align: center;
+
+        @media (max-width: 768px) {
+            position: static;
+            left: auto;
+            top: auto;
+            transform: none;
+            margin: 1rem 0.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0,0,0, 0.3);
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
     }
 }
